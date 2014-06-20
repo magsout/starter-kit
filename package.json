@@ -1,0 +1,38 @@
+{
+  "name": "boilerplate",
+  "version": "0.5.0",
+  "description": "project boilerplate",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/magsout/boilerplate.git"
+  },
+  "keywords": [
+    "html",
+    "scss",
+    "sass",
+    "css"
+  ],
+  "author": "Splitfire",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/magsout/boilerplate/issues"
+  },
+  "devDependencies": {
+    "grunt"							: "*",
+    "grunt-photobox"				: "*",
+    "grunt-bower-task"				: "*",
+    "grunt-contrib-sass"			: "*",
+    "grunt-contrib-compass"			: "*",
+    "grunt-contrib-watch"			: "*",
+    "grunt-contrib-imagemin"		: "*",
+    "grunt-contrib-handlebars"		: "*",
+    "load-grunt-tasks"				: "*",
+    "grunt-autoprefixer" 			: "*",
+    "grunt-contrib-cssmin"			: "*",
+    "grunt-combine-media-queries" 	: "*",
+    "grunt-concurrent"				: "*",
+    "time-grunt"					: "*"	
+
+  }
+}

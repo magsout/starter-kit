@@ -7,3 +7,4 @@ vendors
 Gemfile.lock
 bower
 bower_components
+.bowerrc

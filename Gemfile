@@ -1,0 +1,5 @@
+source 'https://rubygems.org'
+gem 'compass', 	'1.0.0.alpha.19'
+gem 'oily_png'
+gem 'sass',		'3.3.7'
+gem 'image_optim'
