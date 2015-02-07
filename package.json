@@ -13,8 +13,8 @@
     "gulp",
     "css"
   ],
-  "author": "Splitfire",
-  "license": "BSD-2-Clause",
+  "author": "magsout",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/magsout/starter-kit/issues"
   },
