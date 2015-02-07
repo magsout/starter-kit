@@ -1,22 +1,22 @@
 {
-  "name": "boilerplate",
-  "version": "0.5.0",
-  "description": "project boilerplate",
+  "name": "Starter Kit",
+  "version": "1.0.0",
+  "description": "Sarter kit front end",
   "main": "index.html",
   "repository": {
     "type": "git",
-    "url": "git://github.com/magsout/boilerplate.git"
+    "url": "git://github.com/magsout/starter-kit"
   },
   "keywords": [
     "html",
-    "scss",
-    "sass",
+    "cssnext",
+    "gulp",
     "css"
   ],
   "author": "Splitfire",
   "license": "BSD-2-Clause",
   "bugs": {
-    "url": "https://github.com/magsout/boilerplate/issues"
+    "url": "https://github.com/magsout/starter-kit/issues"
   },
   "devDependencies": {
     "grunt"							: "*",
@@ -32,7 +32,7 @@
     "grunt-contrib-cssmin"			: "*",
     "grunt-combine-media-queries" 	: "*",
     "grunt-concurrent"				: "*",
-    "time-grunt"					: "*"	
+    "time-grunt"					: "*"
 
   }
 }
