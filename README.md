@@ -5,7 +5,7 @@
 ## Install
 
 ```console
-$ git clone https://github.com/splitfire-cs/cs-stylesheet.git
+$ git clone https://github.com/magsout/starter-kit.git
 ```
 
 ## Requirements
@@ -38,12 +38,10 @@ Basic visual tests are in `test/index.html`.
 Work on a branch, install dev-dependencies, respect coding style & run tests before submitting a bug fix or a feature.
 
 ```console
-$ git clone https://github.com/splitfire-cs/cs-stylesheet.git
+$ git clone https://github.com/magsout/starter-kit.git
 $ git checkout -b patch-1
 $ npm install
 $ npm test
 ```
-
-## [Changelog](CHANGELOG.md)
 
 ## [License](LICENSE)
