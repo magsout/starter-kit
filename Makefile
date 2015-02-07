@@ -1,27 +1,21 @@
-init: 
+install:
 	@ echo "❯ Initializing..."
-	@ bundle install --path vendors/bundle
-	@ npm install
-	@ bower install
-	
+	npm install
+
 update:
 	@ echo "❯ Updating..."
-	@ npm update
-	@ bower update
-	@ bundle update
+	npm update
 
 watch:
 	@ echo "❯ Watching..."
-	@ grunt dev
+	gulp
 
-watchOut:
-	@ echo "❯ Watching..."
-	@ grunt dev > grunt_log.txt
+build:
+	@ echo "❯ Building..."
+	gulp build
 
-see:
-	@ echo "❯ Watching..."
-	@ tail -F grunt_log.txt
-	
 dist:
 	@ echo "❯ Distribution..."
-	@ grunt dist
+	(rm  ./assets/build/javascripts/*.js)
+	(rm  ./assets/build/stylesheets/*.css)
+	gulp dist --production

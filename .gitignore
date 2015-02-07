@@ -1,10 +1,4 @@
-.sass-cache
 .DS_Store
-.bundle
-.sass-cache
 node_modules
-vendors
-Gemfile.lock
-bower
-bower_components
-.bowerrc
+build
+test

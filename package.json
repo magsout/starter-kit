@@ -1,11 +1,19 @@
 {
-  "name": "Starter Kit",
+  "name": "starter-kit",
   "version": "1.0.0",
   "description": "Sarter kit front end",
   "main": "index.html",
   "repository": {
     "type": "git",
     "url": "git://github.com/magsout/starter-kit"
+  },
+  "scripts": {
+    "setup": "npm install && mkdir -p build",
+    "preprocess": "cssnext /assets/css/index.css build/stylesheets/index.css",
+    "build": "npm run setup && npm run preprocess",
+    "preprocess-test": "cssnext test/test.css build/stylesheets/test.css",
+    "build-test": "npm run setup && npm run preprocess-test",
+    "test": "npm run build-test"
   },
   "keywords": [
     "html",
@@ -19,20 +27,15 @@
     "url": "https://github.com/magsout/starter-kit/issues"
   },
   "devDependencies": {
-    "grunt"							: "*",
-    "grunt-photobox"				: "*",
-    "grunt-bower-task"				: "*",
-    "grunt-contrib-sass"			: "*",
-    "grunt-contrib-compass"			: "*",
-    "grunt-contrib-watch"			: "*",
-    "grunt-contrib-imagemin"		: "*",
-    "grunt-contrib-handlebars"		: "*",
-    "load-grunt-tasks"				: "*",
-    "grunt-autoprefixer" 			: "*",
-    "grunt-contrib-cssmin"			: "*",
-    "grunt-combine-media-queries" 	: "*",
-    "grunt-concurrent"				: "*",
-    "time-grunt"					: "*"
-
+    "gulp": "3.8.10",
+    "gulp-cssmin": "^0.1.6",
+    "gulp-cssnext": "^1.0.0",
+    "gulp-grunt": "^0.5.2",
+    "gulp-imagemin": "^2.1.0",
+    "gulp-minify-css": "^0.3.11",
+    "gulp-plumber": "^0.6.6",
+    "gulp-util": "^3.0.1",
+    "imagemin-pngquant": "^4.0.0",
+    "minimist": "^1.1.0"
   }
 }
