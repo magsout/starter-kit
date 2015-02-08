@@ -12,7 +12,7 @@ var options = require("minimist")(process.argv.slice(2))
 
 /* gulp stylesheets or gulp stylesheets --production */
 gulp.task("stylesheets", function() {
-  return gulp.src("./assets/css/*.css")
+  return gulp.src("./assets/stylesheets/*.css")
   .pipe(options.production ? plumber() : gutil.noop())
   .pipe(cssnext({
     sourcemap : !options.production,
@@ -42,7 +42,7 @@ gulp.task('imagemin', function () {
 
 /* gulp */
 gulp.task('default', function(){
-  gulp.watch('./assets/css/**/*.css', ['stylesheets']).on('change', function(event) {
+  gulp.watch('./assets/stylesheets/**/*.css', ['stylesheets']).on('change', function(event) {
     console.log('File ' + event.path + ' was modified')
   });
 });
