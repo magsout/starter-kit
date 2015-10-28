@@ -1,0 +1,30 @@
+/** @define index; use strict */
+
+/*------------------------------------*\
+    Reset
+\*------------------------------------*/
+
+@import "cssrecipes-defaults/lib/border-collapse";
+@import "cssrecipes-defaults/lib/box-sizing";
+@import "cssrecipes-defaults/lib/document-remove-margin-padding";
+@import "cssrecipes-defaults/lib/hidden";
+@import "cssrecipes-reset/index";
+@import "cssrecipes-custom-media-queries/index";
+
+/*------------------------------------*\
+    Vendors
+\*------------------------------------*/
+
+@import "cssrecipes-grid/index";
+
+/*------------------------------------*\
+    Component
+\*------------------------------------*/
+
+/*------------------------------------*\
+    Utils
+\*------------------------------------*/
+
+@import "cssrecipes-utils/lib/all";
+@import "cssrecipes-utils/lib/max";
+@import "cssrecipes-utils/lib/min";

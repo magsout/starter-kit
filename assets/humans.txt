@@ -1,0 +1,12 @@
+(((
+(. .)
+(( v ))
+----m-m-------------------------
+
+{{projectName}} - Version 1.0
+@team		  Splitfire
+@authors 	Guillaume DEMESY
+@version 	1.0
+@released	28/10/2015
+
+--------------------------------

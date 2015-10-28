@@ -10,28 +10,31 @@ $ git clone https://github.com/magsout/starter-kit.git
 
 ## Requirements
 
-## Install dependencies
+## Install project
 
 ```console
-$ npm install
+$ npm run setup
 ```
 ---
+## Run server and watch
 
-## Testing
+```console
+$ npm run start
+```
+---
+## Watch
+
+```console
+$ npm run watch
+```
+---
+## Build
 
 To generate a build:
 
 ```console
 $ npm run build
 ```
-
-To generate the testing build.
-
-```console
-$ npm run build-test
-```
-
-Basic visual tests are in `test/index.html`.
 
 ## Contributing
 

@@ -1,6 +1,6 @@
 {
   "name": "starter-kit",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Sarter kit front end",
   "main": "index.html",
   "repository": {
@@ -8,18 +8,16 @@
     "url": "git://github.com/magsout/starter-kit"
   },
   "scripts": {
-    "setup": "npm install && mkdir -p build",
-    "preprocess": "cssnext /assets/css/index.css build/stylesheets/index.css",
-    "build": "npm run setup && npm run preprocess",
-    "preprocess-test": "cssnext test/test.css build/stylesheets/test.css",
-    "build-test": "npm run setup && npm run preprocess-test",
-    "test": "npm run build-test"
+    "start": "webpack-dev-server --content-base ./ --watch --progress --colors",
+    "watch": "webpack --watch --progress --colors",
+    "build": "webpack --production --progress --colors"
   },
   "keywords": [
     "html",
     "cssnext",
-    "gulp",
-    "css"
+    "webpack",
+    "css",
+    "babel"
   ],
   "author": "magsout",
   "license": "MIT",
@@ -27,15 +25,24 @@
     "url": "https://github.com/magsout/starter-kit/issues"
   },
   "devDependencies": {
-    "gulp": "3.8.10",
-    "gulp-cssmin": "^0.1.6",
-    "gulp-cssnext": "^1.0.0",
-    "gulp-grunt": "^0.5.2",
-    "gulp-imagemin": "^2.1.0",
-    "gulp-minify-css": "^0.3.11",
-    "gulp-plumber": "^0.6.6",
-    "gulp-util": "^3.0.1",
-    "imagemin-pngquant": "^4.0.0",
-    "minimist": "^1.1.0"
+    "babel-core": "^5.8.21",
+    "babel-loader": "^5.3.2",
+    "classnames": "^2.1.3",
+    "css-loader": "^0.21.0",
+    "cssnext-loader": "^1.0.1",
+    "cssrecipes-custom-media-queries": "^0.3.0",
+    "cssrecipes-defaults": "^0.5.0",
+    "cssrecipes-grid": "^1.0.0",
+    "cssrecipes-reset": "^0.4.0",
+    "cssrecipes-utils": "^0.4.3",
+    "extract-text-webpack-plugin": "^0.8.2",
+    "image-webpack-loader": "^1.6.2",
+    "react": "^0.14.0",
+    "style-loader": "^0.13.0",
+    "svgo": "^0.5.0",
+    "svgo-loader": "^1.1.0",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.12.1"
   }
 }
