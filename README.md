@@ -13,7 +13,7 @@ $ git clone https://github.com/magsout/starter-kit.git
 ## Install project
 
 ```console
-$ npm run setup
+$ npm install
 ```
 ---
 ## Run server and watch
