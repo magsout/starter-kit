@@ -1,6 +1,6 @@
 # Starter kit
 
-> Sarter kit front end
+> Starter kit / boilerplate front end
 
 ## Install
 
