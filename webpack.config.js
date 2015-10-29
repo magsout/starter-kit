@@ -46,7 +46,15 @@ module.exports = {
   },
   module: {
     loaders: [
-    // Extract css files
+      // Extract JS files
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loaders: [
+          "babel"
+        ]
+      },
+      // Extract css files
       {
         test: /\.css$/,
         loader: ExtractTextPlugin.extract(
