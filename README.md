@@ -38,13 +38,12 @@ $ npm run build
 
 ## Contributing
 
-Work on a branch, install dev-dependencies, respect coding style & run tests before submitting a bug fix or a feature.
+Work on a branch, install dev-dependencies and respect the coding style before submitting a bug fix or a feature.
 
 ```console
 $ git clone https://github.com/magsout/starter-kit.git
 $ git checkout -b patch-1
 $ npm install
-$ npm test
 ```
 
 ## [License](LICENSE)
